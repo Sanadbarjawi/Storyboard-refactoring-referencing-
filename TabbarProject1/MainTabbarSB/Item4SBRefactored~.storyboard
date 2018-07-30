@@ -6,9 +6,27 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="dQL-gr-Ei2">
+            <objects>
+                <viewController id="fbr-Tc-eN9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4md-dW-CPb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yRj-Z8-kSn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Uav-DT-87I"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cx4-t9-nMY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2740" y="-524"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aj5-kB-iVj">
             <objects>
@@ -22,63 +40,60 @@
                         <segue destination="QZJ-tH-gOo" kind="relationship" relationship="viewControllers" id="meh-Xo-g3K"/>
                         <segue destination="BOS-oB-bJb" kind="relationship" relationship="viewControllers" id="POv-mT-XPa"/>
                         <segue destination="3Ce-pS-DIY" kind="relationship" relationship="viewControllers" id="NFg-ZM-OAS"/>
-                        <segue destination="ot7-16-9mn" kind="relationship" relationship="viewControllers" id="eF8-ow-osZ"/>
-                        <segue destination="FLd-vV-Ucz" kind="relationship" relationship="viewControllers" id="bwv-Nh-xy5"/>
+                        <segue destination="aPG-m0-87h" kind="relationship" relationship="viewControllers" id="eF8-ow-osZ"/>
+                        <segue destination="fbr-Tc-eN9" kind="relationship" relationship="viewControllers" id="bwv-Nh-xy5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r6G-l2-Hl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1807" y="-1109"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="A3d-60-N2A">
+            <objects>
+                <viewController id="aPG-m0-87h" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7qt-aH-NpS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VPR-Gc-9Ba"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Q4V-O3-kLF"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PP3-af-6VJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2660" y="264"/>
+        </scene>
         <!--Item1SBRefactored-->
         <scene sceneID="yU7-OF-8lb">
             <objects>
                 <viewControllerPlaceholder storyboardName="Item1SBRefactored" id="QZJ-tH-gOo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Qem-Yc-WsH"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="Qem-Yc-WsH"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akP-Ci-VyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2354" y="-585"/>
+            <point key="canvasLocation" x="-940" y="-888"/>
         </scene>
         <!--Item2SBRefactored-->
         <scene sceneID="1TT-bX-8PN">
             <objects>
                 <viewControllerPlaceholder storyboardName="Item2SBRefactored" id="BOS-oB-bJb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Ovl-Zf-32M"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="Ovl-Zf-32M"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VnQ-wJ-hIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2085" y="-585"/>
+            <point key="canvasLocation" x="-1362" y="-538"/>
         </scene>
         <!--Item3SBRefactored-->
         <scene sceneID="Dqs-jm-SXP">
             <objects>
                 <viewControllerPlaceholder storyboardName="Item3SBRefactored" id="3Ce-pS-DIY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item3" id="Gha-bw-L8K"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="Gha-bw-L8K"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wme-VH-tuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1807" y="-585"/>
-        </scene>
-        <!--Item4SBRefactored-->
-        <scene sceneID="oUE-1f-PRG">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Item4SBRefactored" id="ot7-16-9mn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 4" id="V3I-M2-BfN"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JLm-k1-mW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1535" y="-585"/>
-        </scene>
-        <!--Item5SBRefactored-->
-        <scene sceneID="lWp-s0-ilP">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Item5SBRefactored" id="FLd-vV-Ucz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 5" id="COJ-Vu-qlo"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="miq-Vm-sUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1255" y="-585"/>
+            <point key="canvasLocation" x="-1807" y="-18"/>
         </scene>
     </scenes>
 </document>

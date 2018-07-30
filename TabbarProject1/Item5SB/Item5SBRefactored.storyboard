@@ -1,27 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fbr-Tc-eN9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l7H-BH-XqL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="dQL-gr-Ei2">
             <objects>
                 <viewController id="fbr-Tc-eN9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4md-dW-CPb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZ0-ji-iTx">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Xtw-Fd-cdH" kind="show" id="5qP-nr-cCS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nZ0-ji-iTx" firstAttribute="centerY" secondItem="4md-dW-CPb" secondAttribute="centerY" id="a61-5d-201"/>
+                            <constraint firstItem="nZ0-ji-iTx" firstAttribute="centerX" secondItem="4md-dW-CPb" secondAttribute="centerX" id="cPM-dE-YGi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yRj-Z8-kSn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Uav-DT-87I"/>
+                    <navigationItem key="navigationItem" id="HuS-WC-A58"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cx4-t9-nMY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2740" y="-524"/>
+            <point key="canvasLocation" x="-1882" y="-525"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H3M-RI-wUe">
+            <objects>
+                <viewController id="Xtw-Fd-cdH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ec2-p0-XLn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="h4J-1c-bRZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I27-6R-zTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1055" y="-525"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="5ZK-ZP-GP1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l7H-BH-XqL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Uav-DT-87I"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fnB-9n-Zkd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fbr-Tc-eN9" kind="relationship" relationship="rootViewController" id="zNm-NO-DR8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRn-QS-zSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2697" y="-526"/>
         </scene>
     </scenes>
 </document>

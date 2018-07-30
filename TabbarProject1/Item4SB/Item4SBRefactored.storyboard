@@ -1,27 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aPG-m0-87h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DCH-lu-6Lo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="A3d-60-N2A">
             <objects>
                 <viewController id="aPG-m0-87h" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7qt-aH-NpS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0i-fu-gno">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cEl-lk-Gxr" kind="show" id="LVM-e2-rfN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c0i-fu-gno" firstAttribute="centerY" secondItem="7qt-aH-NpS" secondAttribute="centerY" id="GjF-Bx-hVd"/>
+                            <constraint firstItem="c0i-fu-gno" firstAttribute="centerX" secondItem="7qt-aH-NpS" secondAttribute="centerX" id="c1M-mi-U4X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VPR-Gc-9Ba"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Q4V-O3-kLF"/>
+                    <navigationItem key="navigationItem" id="Tjb-mu-fQh"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PP3-af-6VJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2660" y="264"/>
+            <point key="canvasLocation" x="-1720.8" y="263.11844077961024"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Gj3-OU-gB7">
+            <objects>
+                <viewController id="cEl-lk-Gxr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ixd-Ff-nR0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZnD-SD-bdx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5pr-vm-uYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-959" y="263"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="PUz-t9-n16">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DCH-lu-6Lo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Q4V-O3-kLF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aWU-Zo-HrQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aPG-m0-87h" kind="relationship" relationship="rootViewController" id="cSQ-p1-uve"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNh-2W-orY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2660" y="263.11844077961024"/>
         </scene>
     </scenes>
 </document>
